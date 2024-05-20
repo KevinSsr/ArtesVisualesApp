@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar Orden</title>
+</head>
+<body>
+    <h2>Ingresar Orden</h2>
+    <form action="insert_orden.php" method="post">
+        <label for="id_cliente">ID Cliente:</label><br>
+        <input type="number" id="id_cliente" name="id_cliente" required><br><br>
+        
+        <label for="fecha">Fecha:</label><br>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+        
+        <label for="total">Total:</label><br>
+        <input type="number" step="0.01" id="total" name="total" required><br><br>
+        
+        <input type="submit" value="Registrar Orden">
+    </form>
+</body>
+</html>
